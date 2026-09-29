@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "User Document Schema",
+  "description": "IETF JSON Schema specification for an individual user document in the users collection.",
+  "type": "object",
+  "properties": {
+    "uid": {
+      "type": "string",
+      "description": "Unique user ID string matching Firebase Auth UID"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "User's preferred display name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Primary email address"
+    },
+    "photo_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL link to profile photo in Firebase Storage"
+    },
+    "country": {
+      "type": "string",
+      "description": "Country of residence"
+    },
+    "birthday": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 formatted UTC timestamp representing birth date"
+    },
+    "created_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 formatted UTC timestamp of account creation"
+    }
+  },
+  "required": [
+    "uid",
+    "display_name",
+    "email",
+    "photo_url",
+    "country",
+    "birthday",
+    "created_time"
+  ],
+  "additionalProperties": false
+}

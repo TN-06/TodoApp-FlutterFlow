@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Task Document Schema",
+  "description": "IETF JSON Schema specification for an individual task document in the tasks collection.",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Headline title of the task"
+    },
+    "details": {
+      "type": "string",
+      "description": "Detailed text description of the task"
+    },
+    "completed": {
+      "type": "boolean",
+      "description": "Completion status flag"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 formatted UTC timestamp of task creation"
+    },
+    "user": {
+      "type": "string",
+      "pattern": "^/users/[a-zA-Z0-9_-]+$",
+      "description": "Firestore document path reference string pointing to a document in the users collection"
+    }
+  },
+  "required": [
+    "title",
+    "details",
+    "completed",
+    "created",
+    "user"
+  ],
+  "additionalProperties": false
+}
