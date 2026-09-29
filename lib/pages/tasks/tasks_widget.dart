@@ -152,7 +152,7 @@ class _TasksWidgetState extends State<TasksWidget> {
                               16.0, 0.0, 16.0, 0.0),
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).primary,
+                          color: Color(0xC0FF5963),
                           textStyle: FlutterFlowTheme.of(context)
                               .labelMedium
                               .override(
