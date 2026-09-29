@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "207730558847",
+    "project_id": "teagannorconk-todoapp",
+    "storage_bucket": "teagannorconk-todoapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207730558847:android:efee5f80ce176f41fc3c4a",
+        "android_client_info": {
+          "package_name": "com.mycompany.teagannorconktodoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX7_ZfWF64JPo_GyDv1G_CgLhQiw1RiaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
